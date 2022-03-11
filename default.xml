@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default remote="sssa-ampere" revision="default"/>
+
+  <!-- You can have as many remote repositories as you like -->
+
+  <remote name="fred"   fetch="https://github.com/fred-framework" />
+  <remote name="ros"    fetch="https://github.com/ros" />
+
+  <!-- List all the repositories you want to fetch -->
+  <!-- "name": git repository's name on hosting server
+       "remote": the remote host from above (if not the default)
+       "revision": commitish to checkout (if not the default)
+       "path": directory where git repository gets cloned/synced -->
+
+  <project name="meta-fred"         revision="refs/heads/main"      remote="fred" />
+  <project name="meta-retis"        revision="refs/heads/v2020.2"   remote="fred" />
+  <project name="meta-ros"          revision="refs/heads/zeus"      remote="ros" />
+<!--   <project name="meta-llvm"         revision="refs/heads/warrior"   remote="sssa-ampere"/>  -->
+<!--   <project name="meta-extrae"       revision="refs/heads/warrior"   remote="sssa-ampere"/>  -->
+ 
+</manifest>
