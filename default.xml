@@ -5,6 +5,7 @@
   <!-- You can have as many remote repositories as you like -->
 
   <remote name="fred"   fetch="https://github.com/fred-framework" />
+  <remote name="ampere" fetch="https://github.com/sssa-ampere" />
   <remote name="ros"    fetch="https://github.com/ros" />
 
   <!-- List all the repositories you want to fetch -->
@@ -16,6 +17,7 @@
   <project name="meta-fred"         revision="refs/heads/main"      remote="fred" />
   <project name="meta-retis"        revision="refs/heads/v2020.2"   remote="fred" />
   <project name="meta-ros"          revision="refs/heads/zeus"      remote="ros" />
+  <project name="meta-ampere"       revision="refs/heads/main"      remote="ampere" />
 <!--   <project name="meta-llvm"         revision="refs/heads/warrior"   remote="sssa-ampere"/>  -->
 <!--   <project name="meta-extrae"       revision="refs/heads/warrior"   remote="sssa-ampere"/>  -->
  
